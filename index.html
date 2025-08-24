@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de imagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="image">
+            <img src="img/icones/logo.png" alt="Ícone">
+        </div>
+        
+        <ul class="menu" id="category">
+            <li data-category="Astronomia">Astronomia</li>
+            <li data-category="Biologia">Biologia</li> 
+            <li data-category="Física">Física</li>
+            <li data-category="Literatura">Literatura</li>
+        </ul>
+        
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Pesquisar...">
+            <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     class="w-6 h-6 text-gray dark:text-white" 
+                     fill="none" 
+                     viewBox="0 0 24 24" 
+                     stroke="currentColor" 
+                     stroke-width="2">
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z" />
+                </svg>
+            </div>         
+        </div>
+    </header>
+
+    <div class="slider">
+        <div class="list" id="gallery">
+        </div> 
+        <div class="arrows">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+    </div>
+    
+
+    <div class="thumb-wrapper"> 
+        <div class="thumbs">
+            <button class="thumb-arrow" id="thumbPrev">&#10094;</button>
+            <div class="thumbnail" id="thumbnailContainer"></div>
+            <button class="thumb-arrow" id="thumbNext">&#10095;</button>
+        </div>
+    </div>
+      
+      <div id="pagination"></div>
+      
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
