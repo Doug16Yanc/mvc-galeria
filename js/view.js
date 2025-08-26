@@ -6,6 +6,7 @@ class View {
         this.pagination = document.getElementById("pagination");
         this.prevBtn = document.getElementById("prev");
         this.nextBtn = document.getElementById("next");
+        this.menu = document.querySelector(".menu");
         this.thumbnailContainer = document.querySelector(".thumbnail");
         
         this.currentIndex = 0;
@@ -97,6 +98,19 @@ class View {
         this.nextBtn.disabled = totalImages <= 1;
     }
 
+    updateActiveCategory(activeCategory) {
+        const categoryItems = this.menu.querySelectorAll('li[data-category]');
+
+        categoryItems.forEach(item => {
+            item.classList.remove('active');
+        });
+
+        const activeItem = this.menu.querySelector(`li[data-category="${activeCategory}"]`);
+        if (activeItem) {
+            activeItem.classList.add('active');
+        }
+    }
+
     show() {
         document.querySelector('.slider').style.display = 'block';
         document.querySelector('.arrows').style.display = 'flex';
@@ -107,5 +121,15 @@ class View {
 
     hidePagination() {
         this.pagination.style.display = 'none';
+    }
+    
+    burger() {
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('category');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
     }
 }
