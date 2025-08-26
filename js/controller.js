@@ -13,6 +13,7 @@ class Controller {
     }
 
     initialize() {
+        this.view.burger();
         this.view.bindFilter(this.handleFilter.bind(this));
         this.view.bindNavigation(
             this.prevImage.bind(this),
@@ -27,7 +28,7 @@ class Controller {
         
         this.view.hidePagination();
         this.loadImages();
-        
+        this.view.updateActiveCategory(this.currentCategory);
         this.startAutoPlay();
     }
 
@@ -41,6 +42,7 @@ class Controller {
         this.currentCategory = category;
         this.currentThumbPage = 0; 
         this.loadImages();
+        this.view.updateActiveCategory(this.currentCategory);
     }
 
     loadImages() {
