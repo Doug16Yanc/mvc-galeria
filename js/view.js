@@ -122,14 +122,25 @@ class View {
     hidePagination() {
         this.pagination.style.display = 'none';
     }
-    
+
     burger() {
         const hamburger = document.getElementById('hamburger');
         const menu = document.getElementById('category');
+        const categoryItems = menu.querySelectorAll('li[data-category]');
         
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             menu.classList.toggle('active');
+        });
+
+
+        categoryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (menu.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    menu.classList.remove('active');
+                }
+            });
         });
     }
 }
