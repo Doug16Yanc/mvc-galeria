@@ -71,7 +71,7 @@ mvc-galeria/
 
 ```
 
-<h2 align="center" width="100%"> 🧩 Componentes da Arquitetura </h2>
+<h2 align="center" width="100%"> 🧩 Componentes da arquitetura </h2>
 
 <div align="center">
     
@@ -110,8 +110,10 @@ mvc-galeria/
 
 <h2 align="center" width="100%"> Pré-requisitos </h2>
 
-- Navegador web moderno (Chrome, Firefox, Safari, Edge)
-- Editor de código (opcional, para modificações)
+<div align="center">
+ ✅ Navegador web moderno (Chrome, Firefox, Safari, Edge).<br>
+ ✅ Editor de código (opcional, para modificações).
+</div>
 
 <h2 align="center" width="100%"> Instalação </h2>
 
