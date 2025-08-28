@@ -191,12 +191,11 @@ cd mvc-galeria
 
 <div align="center">
     
- ✅ Separação de Responsabilidades**: Cada camada tem sua função específica.<br>
- ✅ Manipulação de DOM**: Criação e modificação dinâmica de elementos.<br>
- ✅ Event Handling**: Gerenciamento de eventos de usuário.<br>
- ✅ Estado da Aplicação**: Controle de estado centralizado no Model.<br>
- ✅ Programação Orientada a Objetos**: Classes e métodos organizados.<br>
- ✅ Modularização**: Código organizado em módulos reutilizáveis.
+ ✅ Separação de responsabilidades: Cada camada tem sua função específica.<br>
+ ✅ Manipulação de DOM: Criação e modificação dinâmica de elementos.<br>
+ ✅ Event handling: Gerenciamento de eventos de usuário.<br>
+ ✅ Estado da aplicação: Controle de estado centralizado no controller.<br>
+ ✅ Modularização: Código organizado em módulos reutilizáveis.
 
  </div>
 
