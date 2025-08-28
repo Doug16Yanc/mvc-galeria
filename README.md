@@ -204,10 +204,10 @@ cd mvc-galeria
 
  <h2 align="center" width="100%"> Filtragem por Categorias </h2>
  <div align="center">
-  ✅ Astronomia**: Quasares, pulsares, nebulosas, galáxias, estrelas, planetas.<br>
-  ✅ Biologia**: Ataxonomias, seres vivos, genética, citologia.<br>
-  ✅ Física**: Fenômenos da natureza, leis matemáticas.<br>
-  ✅ Literatura**: Escolas literárias, obras artísticas.<br>
+  ✅ Astronomia: Quasares, pulsares, nebulosas, galáxias, estrelas, planetas.<br>
+  ✅ Biologia: Ataxonomias, seres vivos, genética, citologia.<br>
+  ✅ Física: Fenômenos da natureza, leis matemáticas.<br>
+  ✅ Literatura: Escolas literárias, obras artísticas.<br>
  </div>
 
 <h2 align="center" width="100%"> Sistema de busca </h2>
