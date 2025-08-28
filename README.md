@@ -1,52 +1,80 @@
-# 📸 Galeria de Imagens Filtrável - Padrão MVC
+<h1 align="center" width="100%">  📸 Galeria de imagens com padrão MVC </h1>
 
-Uma galeria de imagens interativa desenvolvida em JavaScript puro aplicando o padrão arquitetural **Model-View-Controller (MVC)**, com funcionalidades de filtragem por categorias, busca por palavras-chave e paginação.
+<p align="center" width="50%">
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat-square&logo=javascript)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![MVC](https://img.shields.io/badge/Pattern-MVC-green?style=flat-square)
+Uma galeria de imagens interativa desenvolvida em JavaScript puro aplicando o padrão arquitetural **Model-View-Controller (MVC)**, com funcionalidades de apresentação de imagens variadas por quatro categorias categorias, sendo estas : astronomia, biologia, física e literatura, Em cada categoria há a permissão de busca por palavras-chave.
 
-## 🎯 Objetivos do Projeto
+</p>
 
-- Implementar o padrão MVC em JavaScript
-- Exercitar a separação de responsabilidades
-- Trabalhar com manipulação de DOM e eventos
-- Desenvolver renderização dinâmica de conteúdo
-- Aplicar conceitos de organização de código em camadas
+<p align="center">
 
-## ✨ Funcionalidades
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat-square&logo=javascript">
+<img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
+<img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
+<img alt="MVC" src="https://img.shields.io/badge/Pattern-MVC-green?style=flat-square">
 
+</p>
+
+<h2 align="center" width="100%"> 🎯 Objetivos do Projeto </h2>
+
+<div align="center">
+    
+  ✅ Implementar o padrão MVC em JavaScript.<br>
+  ✅ Exercitar a separação de responsabilidades.<br>
+  ✅ Trabalhar com manipulação de DOM e eventos.<br>
+  ✅ Desenvolver renderização dinâmica de conteúdo.<br>
+  ✅ Aplicar conceitos de organização de código em camadas.
+
+</div>
+
+<h2 align="center" width="100%"> ✨ Funcionalidades </h2>
+
+<div align="center">
+    
 | Funcionalidade | Status | Descrição |
 |---|:---:|---|
-| **Galeria de Imagens** | ✅ | Exibição dinâmica de imagens |
-| **Filtragem por Categorias** | ✅ | 4+ categorias (natureza, cidade, animais, pessoas, tecnologia) |
+| **Galeria de imagens** | ✅ | Exibição dinâmica de imagens |
+| **Separação por categorias** | ✅ | 4 categorias (astronomia, biologia, física, literatura) |
 | **Busca por Palavra-chave** | ✅ | Campo de busca para filtrar imagens |
-| **Paginação** | ✅ | Exibe 4 imagens por página |
-| **Efeitos de Transição** | ✅ | Animações fade in/out ao trocar imagens |
-| **Interface Responsiva** | ✅ | Design adaptável para diferentes dispositivos |
+| **Paginação** | ✅ | Exibe 4 miniaturas de imagens por página |
+| **Efeitos de transição** | ✅ | Animações fade in/out ao trocar imagens |
+| **Interface esponsiva** | ✅ | Design adaptável para diferentes dispositivos |
 
-## 🏗️ Arquitetura MVC
+</div>
 
-### 📁 Estrutura do Projeto
+<h2 align="center" width="100%"> 🏗️ Arquitetura MVC </h2>
+
+<h3 align="center" width="100%"> 📁 Estrutura do Projeto </h3>
+
 
 ```
 mvc-galeria/
-├── index.html          # Página principal
 ├── js/
 │   ├── model.js         # Camada de dados e lógica de negócio
 │   ├── view.js          # Camada de apresentação e manipulação do DOM
 │   ├── controller.js    # Camada de controle e coordenação
-│   └── app.js          # Inicializador da aplicação
+│   └── app.js           # Inicializador da aplicação
 └── img/                 # Diretório de imagens
-    ├── natureza1.jpg
-    ├── cidade1.jpg
-    ├── animais1.jpg
+    ├── astronomia
+        ├── quasar.jpg
+    ├── biologia
+        ├── dna.jpg
+    ├── física
+        ├── aerodinâmica.jpg
+    ├── icones
+        ├── logo.png
+    ├── literatura
+        ├── arcadismo.jpg
     └── ...
+├── index.html          # Página principal
+├── styles.css          # Estilos e personalização
+
 ```
 
-### 🧩 Componentes da Arquitetura
+<h2 align="center" width="100%"> 🧩 Componentes da Arquitetura </h2>
 
+<div align="center">
+    
 <table>
 <tr>
 <td width="33%">
@@ -54,8 +82,6 @@ mvc-galeria/
 #### **🗃️ Model (model.js)**
 - Gerencia os dados das imagens
 - Implementa lógica de filtragem
-- Controla a paginação
-- Mantém o estado da aplicação
 
 </td>
 <td width="33%">
@@ -64,7 +90,6 @@ mvc-galeria/
 - Renderização da interface
 - Manipulação do DOM
 - Gerencia eventos de usuário
-- Implementa efeitos visuais
 
 </td>
 <td width="34%">
@@ -79,64 +104,82 @@ mvc-galeria/
 </tr>
 </table>
 
-## 🚀 Como Executar
+</div>
 
-### Pré-requisitos
+<h2 align="center" width="100%"> 🚀 Como executar </h2>
+
+<h2 align="center" width="100%"> Pré-requisitos </h2>
+
 - Navegador web moderno (Chrome, Firefox, Safari, Edge)
 - Editor de código (opcional, para modificações)
 
-### Instalação
+<h2 align="center" width="100%"> Instalação </h2>
+
+<div align="center">
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/Doug16Yanc/mvc-galeria.git
+git clone git@github.com:Doug16Yanc/mvc-galeria.git
 
 # 2. Navegue para o diretório
 cd mvc-galeria
 
-# 3. Abra o arquivo index.html no navegador
-# Ou utilize um servidor local (recomendado):
-
-# Opção 1: Python 3
-python -m http.server 8000
-
-# Opção 2: Node.js (http-server)
-npx http-server
-
-# Opção 3: VS Code Live Server
+# 3. Use o VS Code Live Server
 # Instale a extensão Live Server e clique em "Go Live"
 ```
+</div>
 
-### Acesso
-- **Diretamente**: Abra `index.html` no navegador
-- **Servidor local**: `http://localhost:8000`
+<h2 align="center" width="100%"> 🎮 Como usar </h2>
 
-## 🎮 Como Usar
+<table align="center">
+  <thead>
+    <tr>
+      <th align="center">Ação</th>
+      <th align="left">Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">🏷️ <b>Filtrar por categoria</b></td>
+      <td align="left">Clique nos botões de categoria para filtrar imagens</td>
+    </tr>
+    <tr>
+      <td align="center">🔍 <b>Buscar</b></td>
+      <td align="left">Digite no campo de busca para encontrar imagens específicas</td>
+    </tr>
+    <tr>
+      <td align="center">📄 <b>Navegar páginas</b></td>
+      <td align="left">Use os controles de paginação (<code>←</code> <code>→</code>)</td>
+    </tr>
+    <tr>
+      <td align="center">🖼️ <b>Visualizar</b></td>
+      <td align="left">Imagens são exibidas automaticamente com efeitos de transição</td>
+    </tr>
+  </tbody>
+</table>
 
-| Ação | Descrição |
-|---|---|
-| 🏷️ **Filtrar por Categoria** | Clique nos botões de categoria para filtrar imagens |
-| 🔍 **Buscar** | Digite no campo de busca para encontrar imagens específicas |
-| 📄 **Navegar Páginas** | Use os controles de paginação (`←` `→`) |
-| 🖼️ **Visualizar** | Imagens são exibidas automaticamente com efeitos de transição |
 
-### Categorias Disponíveis
-- 🌿 **Natureza** - Paisagens, plantas, cenários naturais  
-- 🏙️ **Cidade** - Arquitetura urbana, prédios, ruas  
-- 🐾 **Animais** - Fauna diversa, pets, vida selvagem  
-- 👥 **Pessoas** - Retratos, grupos, atividades humanas  
-- 💻 **Tecnologia** - Dispositivos, inovações, gadgets
-
-## 🛠️ Tecnologias Utilizadas
-
+<h2 align="center" width="100%"> Categorias disponíveis </h2>
 <div align="center">
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+ ✅ Astronomia<br>
+ ✅ Biologia<br>
+ ✅ Física<br> 
+ ✅ Literatura
 
 </div>
 
+<h2 align="center" width="100%"> 🛠️ Tecnologias utilizadas </h2>
+
+<div align="center">
+
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat-square&logo=javascript">
+<img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
+<img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
+
+</div>
+
+<div align="center">
+    
 | Tecnologia | Versão | Uso |
 |---|---|---|
 | **HTML5** | Padrão | Estrutura da página |
@@ -144,60 +187,83 @@ npx http-server
 | **JavaScript** | ES6+ | Lógica da aplicação |
 | **MVC Pattern** | - | Arquitetura de software |
 
-## 📚 Conceitos Aplicados
+</div>
 
-- **Separação de Responsabilidades**: Cada camada tem sua função específica
-- **Manipulação de DOM**: Criação e modificação dinâmica de elementos
-- **Event Handling**: Gerenciamento de eventos de usuário
-- **Estado da Aplicação**: Controle de estado centralizado no Model
-- **Programação Orientada a Objetos**: Classes e métodos organizados
-- **Modularização**: Código organizado em módulos reutilizáveis
+<h2 align="center" width="100%"> 📚 Conceitos aplicados </h2>
 
-## 🎨 Funcionalidades Implementadas
+<div align="center">
+    
+ ✅ Separação de Responsabilidades**: Cada camada tem sua função específica.<br>
+ ✅ Manipulação de DOM**: Criação e modificação dinâmica de elementos.<br>
+ ✅ Event Handling**: Gerenciamento de eventos de usuário.<br>
+ ✅ Estado da Aplicação**: Controle de estado centralizado no Model.<br>
+ ✅ Programação Orientada a Objetos**: Classes e métodos organizados.<br>
+ ✅ Modularização**: Código organizado em módulos reutilizáveis.
 
-### Filtragem por Categorias
-- **Natureza**: Paisagens, plantas, cenários naturais
-- **Cidade**: Arquitetura urbana, prédios, ruas
-- **Animais**: Fauna diversa, pets, vida selvagem
-- **Pessoas**: Retratos, grupos, atividades humanas
-- **Tecnologia**: Dispositivos, inovações, gadgets
+ </div>
 
-### Sistema de Busca
-- Busca em tempo real por palavras-chave
-- Filtros combinados (categoria + busca)
-- Resultados instantâneos
+<h2 align="center" width="100%"> 🎨 Funcionalidades implementadas </h2>
 
-### Paginação Inteligente
-- 4 imagens por página
-- Navegação intuitiva
-- Controle de estado entre páginas
+ <h2 align="center" width="100%"> Filtragem por Categorias </h2>
+ <div align="center">
+  ✅ Astronomia**: Quasares, pulsares, nebulosas, galáxias, estrelas, planetas.<br>
+  ✅ Biologia**: Ataxonomias, seres vivos, genética, citologia.<br>
+  ✅ Física**: Fenômenos da natureza, leis matemáticas.<br>
+  ✅ Literatura**: Escolas literárias, obras artísticas.<br>
+ </div>
 
-### Animações e Transições
-- Fade in/out ao trocar imagens
-- Transições suaves entre filtros
-- Efeitos visuais responsivos
+<h2 align="center" width="100%"> Sistema de busca </h2>
+<div align="center">
+ ✅ Busca em tempo real por palavras-chave.<br>
+ ✅ Filtros associados (categoria conduz a busca da imagem).<br>
+ ✅ Resultados instantâneos.<br>
+</div>
 
-## 🧪 Testes Realizados
+<h2 align="center" width="100%"> Paginação Inteligente </h2>
+<div align="center">
+ ✅ 4 miniaturas das imagens de uma categoria por página.<br>
+ ✅ A imagem principal aparecendo no centro da tela.<br>
+ ✅ Navegação intuitiva.<br>
+ ✅ Controle de estado entre páginas.
+</div>
+
+
+<h2 align="center" width="100%"> Animações e transições </h2>
+<div align="center">
+ ✅ Fade in/out ao trocar imagens.<br>
+ ✅ Transições suaves entre filtros.<br>
+ ✅ Efeitos visuais responsivos.<br>
+</div>
+
+<h2 align="center" width="100%"> 🧪 Testes realizados </h2>
+
+<div align="center">
 
 | Teste | Status | Descrição |
 |---|:---:|---|
-| **Filtragem por Categoria** | ✅ | Exibe apenas imagens da categoria selecionada |
-| **Sistema de Busca** | ✅ | Campo de busca funciona corretamente |
+| **Filtragem por categoria** | ✅ | Exibe apenas imagens da categoria selecionada |
+| **Sistema de busca** | ✅ | Campo de busca funciona corretamente |
 | **Paginação** | ✅ | Navegação mantém filtros ativos |
-| **Efeitos de Transição** | ✅ | Animações funcionam em todos os navegadores |
+| **Efeitos de transição** | ✅ | Animações funcionais |
 | **Responsividade** | ✅ | Interface adaptável a diferentes dispositivos |
 
+</div>
 
-## 👨‍💻 Desenvolvimento
+
+<h2 align="center" width="100%"> 👨‍💻 Desenvolvimento </h2>
 
 Este projeto foi desenvolvido como parte da disciplina **Programação Web II**, aplicando conceitos fundamentais de arquitetura de software e desenvolvimento web moderno.
 
 
-## 📄 Licença
+<h2 align="center" width="100%"> 📄 Licença </h2>
+
+<div align="center">
 
 Este projeto é de uso acadêmico e está disponível para fins educacionais.
 
 📚 **Disciplina**: Programação Web II  
 🏗️ **Padrão Arquitetural**: MVC (Model-View-Controller)
 
-### 🌟 Se este projeto te ajudou, considere dar uma estrela!
+</div>
+
+<p align="center" width="100%"> 🌟 Se este projeto te ajudou, considere dar uma estrela! </p>
