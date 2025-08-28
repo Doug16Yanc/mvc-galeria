@@ -115,7 +115,6 @@ mvc-galeria/
 
 <h2 align="center" width="100%"> Instalação </h2>
 
-<div align="center">
 
 ```bash
 # 1. Clone o repositório
@@ -127,7 +126,6 @@ cd mvc-galeria
 # 3. Use o VS Code Live Server
 # Instale a extensão Live Server e clique em "Go Live"
 ```
-</div>
 
 <h2 align="center" width="100%"> 🎮 Como usar </h2>
 
